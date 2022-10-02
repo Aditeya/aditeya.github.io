@@ -16,20 +16,20 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css" />
-	<!-- <base target="_blank"> -->
+	<base target="_blank">
 </head>
 
-<body>
-	<div class="c">
-		<nav class="row card">
-			<div class="1 col"><a href="/">Home</a></div>
-			<div class="1 col"><a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a></div>
+<body class="c">
+	<nav class="row">
+		<div class="card">
+			<div class="1 col"><a target="_self" href="/">Home</a></div>
+			<div class="1 col"><a target="_self" href="{{ get_url(path="@/blog/_index.md") }}">Blog</a></div>
 			<div class="10 col"></div>
-		</nav>
-		<div class="row">
-			<div class="12 col">
-				{% block content %} {% endblock %}
-			</div>
+		</div>
+	</nav>
+	<div class="row">
+		<div class="col">
+			{% block content %} {% endblock %}
 		</div>
 	</div>
 </body>
