@@ -1,8 +1,24 @@
 # The URL the site will be built for
 base_url = "https://aditeya.github.io"
 
+# The site title and description; used in feeds by default.
+# title = "Aditeya's Blog"
+# description = "computer related stuff"
+
+# The default language; used in feeds.
+default_language = "en"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
+
+# When set to "true", the generated HTML files are minified.
+minify_html = true
+
+# When set to "true", a feed is automatically generated.
+generate_feed = false
+
+# use atom feeds
+feed_filename = "atom.xml"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
@@ -11,6 +27,18 @@ build_search_index = false
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+extra_syntaxes_and_themes = ["highlight_themes"]
+highlight_theme = "night" # 3042 night
+
+# Whether external links are to be opened in a new tab
+# If this is true, a `rel="noopener"` will always automatically be added for security reasons
+external_links_target_blank = true
+
+# Whether to set rel="nofollow" for all external links
+external_links_no_follow = true
+
+# Whether to set rel="noreferrer" for all external links
+external_links_no_referrer = true
 
 [extra]
 # Put all your custom variables here
