@@ -7,7 +7,35 @@
 	font-family: 'Iosevka Web' !important;
 }
 
-code {
+@mixin selection {
+	::-moz-selection { @content; }
+	::selection { @content; }
+}
+
+// to work in normal paragraphs
+p,code {
+	@include selection {
+		background-color: #000000;
+		color: #FFFFFF;
+	}
+}
+
+// `` code tags
+*:not(pre) > code {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+// ``` code blocks
+pre > code {
+	@include selection {
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+}
+
+// inverted selection as normal
+@include selection {
 	background-color: #FFFFFF;
 	color: #000000;
 }
