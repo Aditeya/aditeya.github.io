@@ -1,6 +1,7 @@
 +++
 title = "Home"
 date = 2019-11-28
+description = "MuWare: Aditeya's Personal Blog"
 +++
 
 # Welcome to MuWare
