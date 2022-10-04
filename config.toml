@@ -2,8 +2,8 @@
 base_url = "https://aditeya.github.io"
 
 # The site title and description; used in feeds by default.
-# title = "Aditeya's Blog"
-# description = "computer related stuff"
+title = "Aditeya's Blog"
+description = "computer related stuff"
 
 # The default language; used in feeds.
 default_language = "en"
@@ -35,7 +35,7 @@ highlight_theme = "night" # 3042 night
 external_links_target_blank = true
 
 # Whether to set rel="nofollow" for all external links
-external_links_no_follow = true
+external_links_no_follow = false
 
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true

@@ -17,18 +17,31 @@
 </head>
 
 <body class="c">
+
 	<nav class="row">
 		<div class="card">
-			<div class="1 col"><a target="_self" href="/">Home</a></div>
-			<div class="1 col"><a target="_self" href="{{ get_url(path="@/blog/_index.md") }}">Blog</a></div>
+			<div class="1 col"><a href="/">Home</a></div>
+			<div class="1 col"><a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a></div>
 			<div class="10 col"></div>
 		</div>
 	</nav>
+
 	<div class="row">
 		<div class="col">
 			{% block content %} {% endblock %}
 		</div>
 	</div>
+
+	<hr>
+
+	<footer class="row">
+		<div class="card">
+			<div class="col"><a href="https://github.com/Aditeya/">Github</a></div>
+			<div class="col"><a href="https://twitter.com/Aditeya1024">Twitter</a></div>
+			<div class="col"><a href="https://www.instagram.com/aditeya1024/">Instagram</a></div>
+			<div class="col"><a href="https://www.youtube.com/user/SuperAditeya/">Youtube</a></div>
+		</div>
+	</footer>
 </body>
 
 </html>
