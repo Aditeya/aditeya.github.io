@@ -17,7 +17,7 @@ p {
 }
 
 // to work in normal paragraphs
-p,code {
+p,b,strong,li,code {
 	@include selection {
 		background-color: #000000;
 		color: #FFFFFF;
