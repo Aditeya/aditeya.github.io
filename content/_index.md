@@ -3,7 +3,7 @@ title = "Home"
 date = 2019-11-28
 +++
 
-# Welcome to MauWare
+# Welcome to MuWare
 Welcome to my website , I'm Aditeya. Here you'll find my blog where I ramble on about:
 - computers
 - software
@@ -11,9 +11,10 @@ Welcome to my website , I'm Aditeya. Here you'll find my blog where I ramble on 
 - games
 - other things...
 
-## Why MauWare?
+## Why MuWare?
 Its a portmanteau of\
-**Mau:** From Arabian Mau, my favourite breed of cat\
+**Mu:** From [Arabian Mau](https://en.wikipedia.org/wiki/Arabian_Mau), my favourite breed of cat,
+but with the 'a' dropped so its the Greek letter µ or Mu (pronounced myew)\
 and\
 **Ware:** From Hardware or Software.
 
