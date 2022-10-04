@@ -2,17 +2,22 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>MyBlog</title>
+	<title> 
+		{% if section.title %}
+			{{ section.title }}
+		{% elif page.title %}
+			{{ page.title }}
+		{% endif %}
+		| MauWare
+	</title>
 
-	<link rel="stylesheet" href="https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css" />
-	<link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
+	<link rel="stylesheet" href="https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css" media="print" onload="this.media='all'"/>
 
 </head>
 
@@ -20,9 +25,10 @@
 
 	<nav class="row">
 		<div class="card">
-			<div class="1 col"><a href="/">Home</a></div>
+			<b class="1 col"><a href="/">MauWare</a></b>
+			<!-- <div class="1 col"><a href="/">Home</a></div> -->
 			<div class="1 col"><a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a></div>
-			<div class="10 col"></div>
+			<div class="9 col"></div>
 		</div>
 	</nav>
 
@@ -36,10 +42,10 @@
 
 	<footer class="row">
 		<div class="card">
-			<div class="col"><a href="https://github.com/Aditeya/">Github</a></div>
-			<div class="col"><a href="https://twitter.com/Aditeya1024">Twitter</a></div>
-			<div class="col"><a href="https://www.instagram.com/aditeya1024/">Instagram</a></div>
-			<div class="col"><a href="https://www.youtube.com/user/SuperAditeya/">Youtube</a></div>
+			<div class="col"><a target="_blank" rel="noopener noreferrer" href="https://github.com/Aditeya/">Github</a></div>
+			<div class="col"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Aditeya1024">Twitter</a></div>
+			<div class="col"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/aditeya1024/">Instagram</a></div>
+			<div class="col"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/SuperAditeya/">Youtube</a></div>
 		</div>
 	</footer>
 </body>
