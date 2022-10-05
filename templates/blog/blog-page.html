@@ -1,9 +1,27 @@
 {% extends "base.html" %}
 
+{% block extra_css %}
+	<link rel="stylesheet" href="{{ get_url(path="blog-page.css") }}">
+{% endblock extra_css %}
+
 {% block content %}
 <h1 class="title">
 	{{ page.title }}
 </h1>
 <p class="subtitle"><strong>{{ page.date }}</strong></p>
+<hr>
+<div class="card img-center-hori">
+	<img src="{{ get_url(path=page.extra.image) }}"
+		alt="{{ get_url(path=page.extra.image_alt) }}"
+		width="{{ page.extra.image_width }}"
+		height="{{ page.extra.image_height }}"
+		class="fit">
+</div>
+<p class="subtitle">
+	Photo By
+	<a href="{{ get_url(path=page.extra.image_author_url) }}">{{ page.extra.image_author }}</a>
+	on
+	<a href="{{ get_url(path=page.extra.image_source_url) }}">{{ page.extra.image_source }}</a>
+</p>
 {{ page.content | safe }}
 {% endblock content %}

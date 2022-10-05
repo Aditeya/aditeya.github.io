@@ -28,9 +28,14 @@
 	<meta property="og:description"  content="{{ description }}">
 	<meta name="twitter:description" content="{{ description }}">
 
-	<meta property="og:image"  content="{{ get_url(path="MuWare.webp") }}">
-	<meta name="twitter:image" content="{{ get_url(path="MuWare.webp") }}">
-	<meta name="twitter:card"  content="summary_large_image">
+	{% if page.extra.image %}
+		{% set image = page.extra.image %}
+	{% else %}
+		{% set image = "MuWare.webp" %}
+	{% endif %}
+	<meta property="og:image"  content="{{ get_url(path=image) }}">
+	<meta name="twitter:image" content="{{ get_url(path=image) }}">
+	<meta name="twitter:card"  content="{{ get_url(path=image) }}">
 
 	<!-- constant -->
 	<meta property="og:type" content="website">
@@ -41,7 +46,11 @@
 
 	<link rel="icon" type="image/png" href="{{ get_url(path="favicon.ico?v=2") }}">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css">
+
 	<link rel="stylesheet" href="{{ get_url(path="base.css") }}">
+	{% block extra_css %} {% endblock %}
+	
+
 	<link rel="stylesheet" href="https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css" media="print" onload="this.media='all'">
 
 </head>

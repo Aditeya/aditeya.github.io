@@ -1,0 +1,26 @@
+.blog-post-card {
+	p,h2 {
+		margin: 0.5em 0 0.5em 0;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	img {
+		// width: 100%;
+		object-fit: cover;
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		height: auto;
+	}
+
+	.button {
+		background-color: #000000;
+		border-color: #FFFFFF;
+	}
+}
+
+.img-center-vert {
+	vertical-align: middle;
+}

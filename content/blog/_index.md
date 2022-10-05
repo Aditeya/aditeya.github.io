@@ -1,9 +1,7 @@
 +++
-title = "List of blog posts"
+title = "Blog Posts"
 sort_by = "date"
 template = "blog/blog.html"
 page_template = "blog/blog-page.html"
-description = "MuWare Blog Post List"
+description = "List of Blog Posts on MuWare"
 +++
-
-# test
