@@ -19,9 +19,9 @@
 </div>
 <p class="subtitle">
 	Photo By
-	<a href="{{ get_url(path=page.extra.image_author_url) }}">{{ page.extra.image_author }}</a>
+	<a rel="noopener noreferrer" target="_blank" href="{{ page.extra.image_author_url | safe }}">{{ page.extra.image_author }}</a>
 	on
-	<a href="{{ get_url(path=page.extra.image_source_url) }}">{{ page.extra.image_source }}</a>
+	<a rel="noopener noreferrer" target="_blank" href="{{ page.extra.image_source_url | safe }}">{{ page.extra.image_source }}</a>
 </p>
 {{ page.content | safe }}
 {% endblock content %}
